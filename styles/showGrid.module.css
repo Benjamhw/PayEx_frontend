@@ -1,0 +1,27 @@
+.showGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 90%;
+}
+.showContainerWrapper {
+  position: relative;
+  cursor: pointer;
+}
+.showContainer {
+  display: flex;
+  flex-direction: column;
+}
+.showOverlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.502);
+  padding: 0.6rem;
+}
+.showContainerWrapper:hover > .showOverlay {
+  opacity: 1;
+}
