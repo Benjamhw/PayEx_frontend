@@ -24,7 +24,7 @@ export default function Home() {
     {
       value: "summary",
       name: "Summary",
-      uri: "/tvshow/top10",
+      uri: "/tvshow/summary",
       func: setSummary,
       state: summary,
     },
